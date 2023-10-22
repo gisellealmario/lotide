@@ -16,7 +16,6 @@ const findKeyByValue = function (object, value) {
       return key; // Return the key if the value is found
     }
   }
-  return undefined; // If the value is not found, return undefined
 };
 
 // Example object for testing the findKeyByValue function
