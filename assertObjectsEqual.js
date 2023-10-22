@@ -1,24 +1,32 @@
+// Import the inspect function from the util library
 const assertObjectsEqual = function(actual, expected) {
-  const inspect = require('util').inspect; // Import the inspect function from the util library
-  // Compare the objects using eqObjects and print the appropriate message
+  const inspect = require('util').inspect; 
+
+  // Define the eqObjects function to compare two objects
   const eqObjects = function (object1, object2) {
-    const keys1 = Object.keys(object1);
-    const keys2 = Object.keys(object2);
+    const keys1 = Object.keys(object1); // Get the keys of the first object
+    const keys2 = Object.keys(object2); // Get the keys of the second object
+
+    // Check if the number of keys in the objects is the same
     if (keys1.length !== keys2.length) {
       return false;
     }
+
+    // Iterate through the keys of the first object
     for (const key of keys1) {
+      // Check if the values of the current keys are arrays and use eqArrays to compare them
       if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
         if (!eqArrays(object1[key], object2[key])) {
           return false;
         }
       } else {
+        // If the values are not arrays, use strict equality to compare them
         if (object1[key] !== object2[key]) {
           return false;
         }
       }
     }
-    return true;
+    return true; // If no differences are found, the objects are considered equal
   };
 
   // Check if the objects are equal and log an appropriate message
@@ -29,8 +37,5 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-
-const object1 = { a: '1', b: 2 };
-const object2 = { b: 2, a: '1' };
-
-assertObjectsEqual(object1, object2);
+// Example usage of the assertObjectsEqual function
+assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1' });
