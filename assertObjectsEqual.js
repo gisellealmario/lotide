@@ -1,3 +1,18 @@
+const eqArrays = function(actual, expected) {
+  // Check if the arrays have different lengths
+  if (actual.length !== expected.length) {
+    return false; // If the lengths are different, the arrays are not equal
+  }
+  // Iterate through the elements of the arrays
+  for (let i = 0; i < actual.length; i++) {
+    // Check if each element in the arrays is the same
+    if (actual[i] !== expected[i]) {
+      return false; // If any elements are different, the arrays are not equal
+    }
+  }
+  return true; // If no differences are found, the arrays are equal
+};
+
 // Import the inspect function from the util library
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect; 
