@@ -35,10 +35,12 @@ assertArraysEqual(result, [1, 4, 9, 16, 25]);
 // Example 2: Mapping an array of strings to their lengths
 const strings = ["hello", "world", "how", "are", "you"];
 const getLength = str => str.length;
-console.log(map(strings, getLength));
+const result2 = map(strings, getLength);
+assertArraysEqual(result2,[ 5, 5, 3, 3, 3 ] );
 
 // Example 3: Converting an array of names to uppercase
 const names = ["alice", "bob", "charlie", "david"];
 const toUpper = name => name.toUpperCase();
-console.log(map(names, toUpper));
+const result3 = map(names, toUpper);
+assertArraysEqual(result3, [ 'ALICE', 'BOB', 'CHARLIE', 'DAVID' ]);
 
