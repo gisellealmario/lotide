@@ -19,6 +19,8 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+// This function returns an array containing only the elements that appear before the one that causes the callback to return a truthy value
+
 const takeUntil = function(array, callback) {
   const results = [];
   for (let item of array) {
@@ -46,5 +48,5 @@ const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Re
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
 
-assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ])
-assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ])
+assertArraysEqual(results1, [1, 2, 5, 7, 2])
+assertArraysEqual(results2, ['I\'ve', 'been', 'to', 'Hollywood'])
