@@ -50,3 +50,5 @@ const data = {
 // Calling the findKey function with the data object and a callback to find a key with stars equal to 2
 const result = findKey(data, x => x.stars === 2);
 console.log(result); 
+
+assertArraysEqual(result, 'noma')
