@@ -19,6 +19,8 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+// map function applies a callback to each element in an array and returns a new array
+
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
