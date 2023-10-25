@@ -11,3 +11,5 @@ const assertEqual = function(actual, expected) {
 
 // Test the function
 assertEqual(1, 1);
+
+module.exports = assertEqual;
