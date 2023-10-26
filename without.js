@@ -20,14 +20,14 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const without = function (arr,[itemsToRemove]) {
+const without = function (arr, itemsToRemove) {
   let newArray = [];
   for (let i = 0; i < arr.length; i++) {
-    if (!itemsToRemove.incldu(arr[i])) {
+    if (!itemsToRemove.includes(arr[i])) {
       newArray.push(arr[i]);
     }
   }
-    
+    return newArray;
 }
 
 
