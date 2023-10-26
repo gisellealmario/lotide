@@ -64,3 +64,5 @@ console.log(eqObjects(shirtObject , longSleeveShirtObject)); // => false
 // Tests the eqObjects function using assertEqual
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), true);
+
+module.exports = eqObjects;

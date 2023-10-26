@@ -52,3 +52,5 @@ const result = findKey(data, x => x.stars === 2);
 console.log(result); 
 
 assertArraysEqual(result, 'noma')
+
+module.exports = findKey;

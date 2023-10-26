@@ -31,3 +31,5 @@ console.log(result); // Output: { L: 2, H: 1 }
 
 assertEqual(result['L'], 2); // Testing the count of 'L'
 assertEqual(result['H'], 1); // Testing the count of 'H'
+
+module.exports = countLetters;

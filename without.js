@@ -40,3 +40,4 @@ console.log (assertArraysEqual(words, ["hello", "world", "lighthouse"]));
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => should PASS
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => should PASS
 
+module.exports = without;

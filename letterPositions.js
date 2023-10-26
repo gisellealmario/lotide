@@ -50,3 +50,6 @@ console.log(results);
 
 // Test to check the positions of 'e' in the string 'hello'
 assertArraysEqual(letterPositions("hello").e, [1]);
+
+
+module.exports = letterPositions;
