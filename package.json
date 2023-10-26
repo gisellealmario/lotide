@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@gisellealmario/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Welcome to our beginner-friendly code library! 🚀 Here, I've gathered a treasure trove of simple and easy-to-understand code examples, just for you.",
   "main": "main.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/gisellealmario/lotide.git"
   },
-  "author": "",
+  "author": "Giselle Almario <gisellealmario@gmail.com (https://www.linkedin.com/in/gisellealmario/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gisellealmario/lotide/issues"
