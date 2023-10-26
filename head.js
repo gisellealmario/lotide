@@ -11,7 +11,7 @@ const assertEqual = require('./assertEqual');
 
 // Test cases
 assertEqual(head([5, 6, 7]), 5); // Should pass
-assertEqual(head(["hi", "Lighthouse", "Labs"]), "Hello"); // Should pass
+assertEqual(head(["hi", "Lighthouse", "Labs"]), "Hello"); 
 assertEqual(head([5]), 5); // Should pass
 assertEqual(head([]), undefined); // Should pass
 
