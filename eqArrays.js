@@ -21,3 +21,5 @@ assertEqual(eqArrays([1, 2, 3], [1, 2, 4]), false);
 
 module.exports = eqArrays;
 module.exports = assertEqual;
+
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
