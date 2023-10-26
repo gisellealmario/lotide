@@ -14,6 +14,6 @@ const words = ["Yo Yo", "Lighthouse", "Labs"];
 const a = tail(words)
 console.log(tail(words));
 
-assertEqual(a, "Yo Yo"); //fail
+assertEqual(a, ["Yo Yo", "Lighthouse"]); //fail
 
 module.exports = tail;
